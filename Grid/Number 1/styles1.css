@@ -1,4 +1,5 @@
-/*UTILIZANDO A PROPRIEDADE GRID-TEMPLATE-COLUMNS E GRID-TEMPLATE-ROWS*/
+/*SUBSTITUÍNDO AS PROPRIEDADES DE GRID-TEMPLATE-COLUMNS E GRID-TEMPLATE-ROWS
+PELA PROPRIEDADE ABREVIADA GRID-TEMPLATE*/
 
 body, html {
     height: 100%;
@@ -27,16 +28,13 @@ body, html {
 
 .header {
     background-color: #FFDE22;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
 }
     
 .sidebar {
     background-color: #FF7755;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
 }
     
 .nav {
@@ -56,7 +54,6 @@ body, html {
     
 .footer {
     background-color: #393f4d;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1 / 3;
 }
     

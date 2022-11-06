@@ -1,4 +1,4 @@
-/*UTILIZANDO A PROPRIEDADE GRID-TEMPLATE-COLUMNS E GRID-TEMPLATE-ROWS*/
+/*SUBSTITUÍNDO A PROPRIEDADE GRID-AREA POR GRID-TEMPLATE-AREAS*/
 
 body, html {
     height: 100%;
@@ -14,6 +14,7 @@ body, html {
     grid-template-columns: 300px 1000px;
     grid-template-rows: 100px 100px 500px 100px;
     gap: 15px;
+    grid-template-areas: "header header" "sidebar nav" "sidebar article" "sidebar article" "footer footer";
 }
 
 .container div {
@@ -27,27 +28,26 @@ body, html {
 
 .header {
     background-color: #FFDE22;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: header;
 }
     
 .sidebar {
     background-color: #FF7755;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-area: sidebar;
 }
     
 .nav {
     background-color: #00DDFF;
+    grid-area: nav;
 }
     
 .article {
     background-color: #bccbde;
+    grid-area: article;
 }
     
 .article p {
+    grid-area: article;
     font-size: 18px;
     font-family: sans-serif;
     color: white;
@@ -55,8 +55,8 @@ body, html {
 }
     
 .footer {
+    grid-area: footer;
     background-color: #393f4d;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: 4 / 1 / 5 / 3;
 }
     
