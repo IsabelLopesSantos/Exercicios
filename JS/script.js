@@ -154,12 +154,25 @@ const cachorro = {
 
 };
 
-let {latido} = cachorro;
+cachorro.latido = function() {
+   return "uau uau"
+}
 
 console.log(latido);*/
 
-/*//Exercícios 5, 6
+/*//Exercício 5, 6
 
+console.log(cachorro.nome);
+
+console.log(cachorro.pernas);
+
+console.log(cachorro.cor);
+
+console.log(cachorro.idade);
+
+console.log(cachorro.latido);*/
+
+/* //Exercício 6
 const cachorro = { 
     nome: 'sukita',
     patas: 4,
@@ -170,7 +183,8 @@ const cachorro = {
     getDogInfo: 'informações cachorro',
 };
 
-console.log(cachorro);*/
+cachorro.raca = 'vira-lata'
+*/
 
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
